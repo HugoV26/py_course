@@ -2,7 +2,6 @@
 
 1. Investigar los operadores aritméticos y de asignación; mostrar un ejemplo de cada uno.
 
-
 *Tarea 2*
 
 **Listas**
@@ -53,7 +52,7 @@ my_second_list = ["Perro", "Gato", True]
 
 Las 3 opciones deben de mostrarse en todos los métodos.
 
-*Tarea 3*  *Fecha Límite de Entrega: 11:59 p.m Jueves 1 de Julio*
+*Tarea 3*  *Fecha Límite de Entrega: 11:59 p.m Viernes 2 de Julio*
 
 1. Definir dos variables que almacenen dos conjuntos respectivamente y dos variables que almacenen dos diccionarios respectivamente.
     1.1 Los valores pueden ser definidos por ustedes o pueden pedirle al usuario que los ingrese.

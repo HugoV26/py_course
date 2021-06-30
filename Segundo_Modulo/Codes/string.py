@@ -84,3 +84,76 @@ else:
     print("La excepción no fue valuerror")
 
 # Métodos de Validación de los strings
+
+# * Endswith -> str.endswith(suffix [, start[, end]])
+# ~ Devuelve True si la cadena termina con el sufijo especificado; de lo contrario devuevle False. El sufijo también puede ser una tupla de sufijos para buscar. Además, se puede especificar la posición de inicio y fin para acotar la búsqueda.
+
+print('www.tunerd.mx'.endswith(('.net', '.mx'), 5, 15))
+print("www.tunerd.mx".endswith(""))
+
+# * Isalpha -> str.isalpha()
+# ~ Devuelve True si todos los caracteres en la cadena son alfabéticos y hay al menos un caracter, False en caso contrario. Los caracteres alfabéticos son aquellos caracteres definidos en la base de datos de caracteres Unicode como "Letra".
+
+print('Python'.isalpha())
+print('Python 3.9'.isalpha())
+
+# * Isascii -> str.ascii()
+# ~ Devuelve True si la cadena está vacía o todos los caracteres son ASCII, False en caso contrario
+
+print('n'.isascii())
+print('ñ'.isascii())
+
+# * Isdecimal -> str.decimal()
+
+print('3'.isdecimal())
+print('-8'.isdecimal())
+
+# * Isdigit -> str.isdigit()
+# ~ Similar a isdecimal, a diferencia de que tambi+en reconoce los números del sistema Kharosthi.
+
+print('𐩁'.isdigit())
+print('𐩁'.isdecimal())
+
+# * Isnumeric -> str.isnumeric()
+# ~ Similiar a isdigit pero también reconoce fracciones vulgares de Unicode
+
+print('\u00BD'.isnumeric())
+print('½'.isnumeric())
+
+# * Isidentifier -> str.isidentifier()
+# ~ Define si puedes utilizar dicho valor como nombre de variable o si la misma corresponde a una palabra reservada de Python.
+
+print("my-var".isidentifier())
+print("my_var".isidentifier())
+print("my, var".isidentifier())
+print('while'.isidentifier())
+
+# * Método de unión y división
+
+# * Join -> str.join(iterable)
+# ~ Devuelve una cadena concatenando los elementos de un iterable (listas, tuplas, string) y serparándolos con la cadena str (a la que se aplica el método)
+
+print(".".join(('www', 'pornhub', 'com')))
+
+# * Partition -> str.partition(sep), str.rpartition(sep)
+# ~ Devuelve una tupla de 3 elementos, donde se divide la cadena en la primer aparición del parámetro sep
+
+print("www.tunerd.mx".partition('.'))
+
+# * Split -> str.split(sep=None, maxsplit=1), rsplit
+# ~ Devuelve una lista de las palabras existentes en la cadena, usando el parámetro sep como delimitador. Si se especifica maxsplit, se realizarán divisiones como máximo, por ende, la lista tendrá como máximo maxsplit+1 elementos. Si el maxsplit no se especifica, o es -1, implica que no hay límite en el número de divisiones, es decir que se realizan todas las divisiones posibles. Si no se especifica un separador con el parámetro sep, la cadena será divida por caracteres no imprimibles (espacios, tabulaciones, saltos de línea)
+
+print('1\t2\n3 4'.split())
+print("Hola* mundo* desde* tu* *Nerd".split('*', 2))
+print('1\n2\n\n3\n4'.split('\n'))
+
+# * Format -> str.format(*args, **kwargs)
+# ~ Realiza una operación para formatear una cadena. Cuando una cadena utiliza este método, puede tener texto literal o campos de reemplazo delimitados por llaves {}. Cada campo de reemplazo puede ser el índice numérico de la posición de un argumento o el nombre de la clave del argumento. El orden sí importa.
+
+print('El resultado de {0}*{1} es {2}'.format(2, 2, 2*2))
+print('El resultado de {2}*{1} es {0}'.format(2, 2, 2*2))
+
+my_var = 2
+print(f'El resultado es: {my_var}*{10} es {my_var*10}')
+print("El resultado es: ", my_var)
+print(f"El resultado es: {my_var}")
