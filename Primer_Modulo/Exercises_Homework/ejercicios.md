@@ -1,3 +1,5 @@
+*******Fecha de Entrega: 2 de Julio del 2021*******
+
 **Listas**
 1. Escribir un programa que le pida al usuario ingresar 5 calificaciones y realizar las siguientes comprobaciones.
 
@@ -45,3 +47,17 @@ my_second_list = ["Perro", "Gato", True]
 "Fin del programa"
 
 Las 3 opciones deben de mostrarse en todos los métodos.
+
+
+*******Fecha de Entrega: 9 de Julio del 2021*******
+
+1. Definir una función que reciba como parámetros dos números y retorne el mayor de ellos.
+
+2. Definir una función que reciba como parámetro una cadena de texto y retornar cuántas letras mayúsculas tiene.
+
+3. Definir una función que reciba como parámetro un número entero e imprima su tabla de multiplicar. (del 1 al 10)
+
+5. Definir una función que reciba como parámetro un número entero de 5 dígitos para asignárselas a dos cajas fuertes con la siguiente combinación:
+
+    La clave de la primera caja será los números impares del número ingresado.
+    La clave de la segunda caja será los números pares del número ingresado.
