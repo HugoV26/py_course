@@ -1,0 +1,9 @@
+1. Leer el archivo test.txt y parsear la información de manera que el contenido del texto se guarde en un diccionario.
+
+{
+    producto: TOSTADITAS 30G,
+    tiempo_de_arranque: 2021/06/26   04:61,
+    ...
+    ...
+    ...
+}

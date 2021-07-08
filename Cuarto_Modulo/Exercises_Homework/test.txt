@@ -1,0 +1,31 @@
+******    Producto :       TOSTADITAS 30G  ******
+
+TIEMPO DE ARRANQUE       2021/06/23   04:42
+
+HORA IMPRES              2021/06/23   06:00
+
+MUESTRA NO.                          174 pc
+
+PESO DESEA                          31.0  g
+
+TOTAL PES                         5500.1  g
+
+PROMEDIO                           31.61  g
+
+DESV.NOR                            2.68  g
+
+MAXIMO                              60.6  g
+
+MINIMO                              30.0  g
+
+RANGO                               30.6  g
+
+T.E.N                                1.0  g
+
+T1                                  30.0  g
+
+T2                                  29.0  g
+
+NU BOLSAS T1                          81 pc
+
+NU BOLSAS T2                           0 pc
