@@ -1,5 +1,6 @@
 """
     *Archivos
+    
     ^ Python contiene funciones para crear, escribir y leer archivos.
     ~ Archivos de texto: Cada línea de texto finaliza con un caracter especial llamado (End of Line: EOL), es decir, '\n'.
     ~ Archivos binarios: no existe un indicador de fin de línea, contienen información de cualquier tipo codificada en binario para el propósito de almacenaminento y procesamiento en ordenadores.
@@ -7,7 +8,7 @@
     ^ Estructura en python para lidiar con archivos
 
     ~ my_file = open("file_name", "access_mode")
-    ~ my_file = open(r"file_name", "access_mode")
+    ~ my_file = open(r"file_name", "access_mode")  #\nema1.txt
     ~ with open("file_name", "acces_mode") as my_file:
 
     ^ Modos de acceso de archivos
@@ -25,14 +26,17 @@
 
 lines = ["Hola mundo", "\nEstoy dentro de un archivo"]
 c = "Odio a Los Caligaris"
-"""
+
+
 f = open("./first_file.txt", "w")
 f.write(c)
 f.close()
 
+
 f = open("./first_file.txt", "w")
 f.writelines(lines)
 f.close()
+
 
 print("Read")
 f = open("./first_file.txt", "r")
@@ -41,6 +45,7 @@ content_str = f.read()
 print(type(content_str))
 f.close()
 
+
 print("\nReadlines")
 f = open("./first_file.txt", "r")
 print(f.readlines())
@@ -48,20 +53,21 @@ content_list = f.readlines()
 print(type(content_list))
 f.close()
 
+
 print("\nReadline")
 f = open("./first_file.txt", "r")
+f.readline()
 print(f.readline().strip('\n'))
 content_ = f.readline()
 print(type(content_))
 print(len(content_))
 print(content_)
 f.close()
-"""
 
-"""
+
 with open("./first_file.txt", 'a+') as f:
     f.write("\nNuevo Texto")
-"""
+
 
 print("Seek")
 with open("./first_file.txt", 'r+') as f:
@@ -72,14 +78,14 @@ with open("./first_file.txt", 'r+') as f:
     line = f.readline()
     print(f'Line: {line}')
     print(f.tell())
-    f.seek(0)
+    f.seek(14)
     line = f.readline()
     print(f'Line: {line}') 
 
-"""
+
+
 with open("./second_file.txt", 'r+', encoding="utf-8") as f:
     f.seek(0)
     line = f.read()
     print(len(line))
     print(line)
-"""
