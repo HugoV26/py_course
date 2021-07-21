@@ -1,4 +1,6 @@
-1. Leer el archivo test.txt y parsear la información de manera que el contenido del texto se guarde en un diccionario.
+******Fecha de Entrega: 23/Julio/2021******
+
+1. Leer el archivo test.txt y parsear la información de manera que el contenido del texto se guarde en un diccionario y pasarla a formato json.
 
 {
     producto: TOSTADITAS 30G,
@@ -29,7 +31,17 @@ last_names = ["Escobar", "Flores", "Parada"]
 
 Resultado --> ["Paco Escobar", "Jesús Flores", "Mauricio Parada"]
 
+6. Para la siguiente lista, filtrar con una función def unicamente las vocales. Hacer uso de Filter.
 
+my_letters = ['a', 'b', 'A', 'e', 'i', 'j', 'o', 'i', 'z', 'ú', 'E']
 
-Investigar Filter, Reduce Function, Zip|Unzip
+7. Para la siguiente lista, filtrar con una función anónima lambda los números pares y con otra función anónima lambda los impares. Haces uso de Filter.
 
+ my_seq = [0, 1, 2, 3, 5, 8, 13]
+
+8. Definir una función que reciba como parámetros las siguientes listas, aplicarles la función zip y retornar una nueva lista con la siguiente estructura. Hacer uso de List Comprehension.
+
+first_list = ["Perro", "Gato", "Elefante"]
+second_list = ["Gris", "Blanco", "Gris"]
+
+Resultado --> ['El Perro es de color Gris', 'El Gato es de color Blanco', "El Elefante es de color Gris"]
