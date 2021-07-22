@@ -90,3 +90,68 @@ k = k % j
 
 print(k)
 """
+
+def print_prime(number):
+    factor = 2
+    while factor <= number:
+        if number % factor == 0:
+            print(factor)
+            number = number / factor
+        else:
+            factor += 1
+
+    return 'Done'
+
+print_prime(101)
+
+
+def is_power_of_two(n):
+    while n % 2 == 0 and n > 1:
+        n = n / 2
+    if n == 1:
+        return True
+
+    return False
+
+print(is_power_of_two(0))
+print()
+print(is_power_of_two(1))
+print()
+print(is_power_of_two(8))
+print()
+print(is_power_of_two(9))
+
+
+def sum_divisor(n):
+    sum = 0
+    aux = n-1
+    
+    while aux > 0:
+        if n % aux == 0:
+            sum += aux
+        aux-=1
+    return sum
+
+print(sum_divisor(0))
+print(sum_divisor(3))
+print(sum_divisor(36))
+print(sum_divisor(102))
+
+
+def multiplication_table(number):
+    multiplier = 1
+
+    while multiplier <= 5:
+        result = multiplier * number
+        if result > 25:
+            break
+
+        print(str(number) + "x" + str(multiplier) + "=" + str(result))
+
+        multiplier += 1
+
+multiplication_table(3)
+
+multiplication_table(5)
+
+multiplication_table(8)
