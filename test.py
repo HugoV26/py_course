@@ -91,6 +91,7 @@ k = k % j
 print(k)
 """
 
+"""
 def print_prime(number):
     factor = 2
     while factor <= number:
@@ -155,3 +156,24 @@ multiplication_table(3)
 multiplication_table(5)
 
 multiplication_table(8)
+
+"""
+
+def cacluate(*num):
+    li = []
+    avg = sum(num)/len(num)
+    for i in num:
+        if i > avg:
+            li.append(i)
+    return avg,li
+count = cacluate(12,13,14,15,16)
+
+print (count)
+
+
+sara = [44, 54, 64, 74, 104]
+
+sarados = [data+6 for data in sara ]
+
+print(sarados)
+
