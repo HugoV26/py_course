@@ -158,7 +158,7 @@ multiplication_table(5)
 multiplication_table(8)
 
 """
-
+"""
 def cacluate(*num):
     li = []
     avg = sum(num)/len(num)
@@ -177,3 +177,29 @@ sarados = [data+6 for data in sara ]
 
 print(sarados)
 
+"""
+"""
+* 4. Definir una función que añada a una lista de animales. Estos se almacenarán en un diccionario; debe de tener al menos el campo tipo y color, pero puede tener más campos los cuáles deberán solicitarselos al usuario. Se deberá preguntar cuántos animales se desean almacenar.
+"""
+
+def animals(**kwargs):
+    kwargs["Tipo"] = "Perro"
+    kwargs["Color"] = "Rojo"
+
+    option = 1
+    while option == 1:
+        option = int(input("¿Desea añadir otro campo?\n1) Sí\n2) No\n--> "))
+
+        if option == 1:
+
+            key = input("¿Cuál es el campo? ")
+            value = input("¿Cuál es su valor? ")
+
+            kwargs[key] = value
+            print(kwargs)
+    
+        else:
+            print("Bye!")
+
+
+animals()
